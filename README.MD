@@ -24,7 +24,7 @@ This addon was created both as a way to dive into the WoW addon programming worl
 #### See your possible earnings instantly
 
 <p align="center">
-  <img src="assets/preview.png" alt="Ledger Total Buyout tooltip"/>
+  <img src="assets/preview.PNG" alt="Ledger Total Buyout tooltip"/>
 </p>
 
 No more manual estimation, your total auction value is always visible.
