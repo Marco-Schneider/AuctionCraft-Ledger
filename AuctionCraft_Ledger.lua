@@ -29,7 +29,12 @@ local function UpdateTotalBuyout()
 
     local totalBuyout = 0
     for _, auction in ipairs(auctions) do
-        local buyout = auction.buyoutAmount * auction.quantity
+        local buyout
+        if auction.status == 1 then -- Sold: buyoutAmount is already the total
+            buyout = auction.buyoutAmount
+        else -- Active: buyoutAmount is per-unit price
+            buyout = auction.buyoutAmount * auction.quantity
+        end
         totalBuyout = totalBuyout + buyout
     end
 
